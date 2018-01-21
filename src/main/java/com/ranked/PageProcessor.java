@@ -51,7 +51,7 @@ public class PageProcessor {
         record.setUrl(baseUrl + url);
         String lastUpdate = document.getElementsByAttributeValue("class", "table").get(0).
                 getElementsByAttributeValue("class", "row0").get(0).getElementsByAttributeValue("class", "date").text();
-//        record.setDate(TransformElementToRecord.transformStringToDate(lastUpdate));
+        record.setDate(TransformElementToRecord.transformStringToDate(lastUpdate));
         return record;
     }
 
